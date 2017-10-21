@@ -1,0 +1,147 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <link rel="stylesheet" type="text/css" href="挂号项目实战.css"> <!--导入css文件-->
+<style>
+.top .topcenter p{display: inline-block;float: right;line-height: 30px;font-size: 13px;color: #868686;}
+.top .topcenter span{ font-size: 13px; text-align: center;}
+.top .topcenter a{text-decoration: none;color:blue;}
+.rady{font-size:16px;color: #fec009; text-align: center; background: url(./img/icon-help.png) no-repeat 0 0; height: 22px; width:120px;margin:15px auto;padding-left: 5px;}
+.biaodan{margin-top: 10px;text-align: center;}
+select{width: 150px;}
+.annu{height: 32px;background-color:#fecd09; text-align: center;margin: 20px auto;font-size: 16px;color:white;font-weight: bold;line-height: 32px;
+width:100px; border-radius: 8px;}
+.help{font-weight: bold;color:#00b3ea;width:120px;margin:10px auto;
+font-size: 16px;background: url(./img/icon-help.png) no-repeat;
+background-position: 0 -23px; padding-left: 5px;text-align: center;
+}
+ .bannerhelp .link{float: left;width:60px; height:30px; font-size: 14px; margin-top: 10px; margin-left: 10px;color:#00b3ea;margin-right: 10px;}
+ .news{ height: 38px; background:#f4f6fa; color:#fec009;font-size: 15px;
+  line-height: 38px;padding-left: 15px; }
+ .new{padding-right: 15px;display: block;float: right;}
+.information{ display: block;font-size: 14px;margin-top:15px; color:#969696;}
+.content-close .news{height: 38px; background:#f4f6fa; color:#4ab4ed;font-size: 15px;
+  line-height: 38px;padding-left: 15px; }
+.content a{text-decoration: none;}
+.number1{color:orange;}
+.number2{color:#4ab4ed;}
+</style>
+ 
+	</head>
+	<body>
+		<div id="top" class="top">
+			<div class="topcenter">
+			<img src="img/icon-call.png"> <span>010-114/116114电话预约</span>
+            <p>欢迎来到城市预约挂号统一平台&nbsp;请&nbsp;&nbsp;<a href="#">登录</a>&nbsp;&nbsp;<a href="#">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">帮助中心</a></p>
+		    </div>
+        </div>                               <!--最上层-->
+		<div class="header"> 
+			<img src="img/logo.png"> 
+            <div class="headerright"> <img src="img/ui-search.jpg"></div>
+		       </div> <!--头部-->
+		<div class="nav">
+		  <div class="warp">
+            <div class="link menu"> 全部科室 
+             
+            </div>
+			<a href="#" class="link link1">按医院挂号</a>
+			<a href="#" class="link link1">按科室挂号</a>
+			<a href="#" class="link link1">按疾病挂号</a>
+			<a href="#" class="link link1">最新公告</a>
+			<a href="#" class="link right">社会知名医院</a>
+          </div>
+		 </div>                 <!--导航-->
+		<div class="main">                     
+            
+            <div class="banner"></div>
+            <div class="bannerfind">   
+                 <div class="rady"> 
+                 <span > 快速预约</span> 
+                 </div>
+                 <form>
+                 	<div class="biaodan"><select > 
+                       <option size="75"> 医院地区 </option>
+                       <option > 东城区</option>
+                       <option > 西城区</option>
+                 	</select></div>
+                 <div class="biaodan"><select > 
+                       <option > 医院等级 </option>
+                      
+                 	</select></div>
+                 	<div class="biaodan"><select > 
+                       <option > 医院名称 </option>
+                      
+                 	</select></div>
+                 	<div class="biaodan"><select > 
+                       <option > 医院科室 </option>
+                      
+                 	</select></div>
+                </form>
+                <div class="annu"> 快速查询</div>
+               
+            </div>
+            <div class="bannerhelp">
+                <div class="help"> 
+                <span > 帮助中心</span> 
+                </div>
+                   <div class="link">账号指南</div>
+                   <div class="link"> 预约指南</div> 
+                   <div class="link"> 账号找回</div> 
+                   <div class="link"> 常见问题</div> 
+                  
+             </div>
+		</div>
+		<div class="content">                     <!--内容-->
+		    <div class="content-tap"> </div>
+		    <div class="content-news"> 
+          <div class="news">最新公告 <a href="#"> <span class="new" >|更多</span> </a> </div>
+          <div class="list-news">
+            
+            <a href="#" > <span class="information" ><span class="number1">1、</span>阜外医院特需门诊暂停
+              更新号源通...
+            </span> </a> 
+            <a href="#"> <span class="information" ><span class="number1">2、</span>防护策略
+              升级通知
+            </span> </a> 
+            <a href="#"> <span class="information" ><span class="number1">3、</span>阜外医
+              院特需门诊暂停更新号源通</span> </a> 
+            <a href="#"> <span class="information" >4、防护策略升级通知
+            </span> </a> 
+            <a href="#"> <span class="information" > 5、阜外医院特需门诊暂停更新号源通...
+            </span> </a> 
+            <a href="#"> <span class="information" >6、防护策略升级通知</span> </a> 
+
+          </div>
+
+        </div>
+		    <div class="content-close"> 
+       <div class="news">停诊公告 <a href="#"> <span class="new" >|更多</span> </a> </div>
+          <div class="list-news">
+            
+            <a href="#" > <span class="information" ><span class="number2">1、</span>首都医科大学附属北京安贞医院消...
+
+            </span> </a> 
+            <a href="#"> <span class="information" ><span class="number2">2、</span>首都医科大学附属北京安贞医院妇
+
+            </span> </a> 
+            <a href="#"> <span class="information" ><span class="number2">3、</span>北京安贞医院妇</span> </a> 
+            <a href="#"> <span class="information" >4、首都医科大学附属北京安贞医院消...
+
+            </span> </a> 
+            <a href="#"> <span class="information" > 5、首都医科大学附属北京安贞医院妇
+..
+            </span> </a> 
+            <a href="#"> <span class="information" >6、北京安贞医院妇</span> </a> 
+
+          </div>
+
+
+        </div>
+        </div>
+        <div class="footer1"> </div>
+        <div class="footer2"> </div> 
+        
+	</body>
+	</html>	
