@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>string</title>
+</head>
+<body>
+	<script type="text/javascript">
+       var str="hello word";     //字符串截取
+       console.log(str.charAt(1));
+       var s1="i want to fuck the world";
+       var s2=s1.slice(2,6);
+       var s3=s1.slice(-14,14);
+       var s4=s1.substr(0,6);
+       console.log(s1);
+       console.log(s2);
+        console.log(s3);  
+        console.log(s4);  
+                                  //获取扩展名~
+        var url1="https://github.com/liwenqxs/liwenqxs.git";
+         var url2="345678.jpg"
+        function getformat(url)
+        {
+          var postion=url.lastIndexOf(".");
+          var formatname=url.slice(postion);
+          return formatname;
+        }
+        console.log(getformat(url1));
+        console.log(getformat(url2));
+                                   //把字符串分割成字符串数组
+        var s5="i-want-fuck-the-word ";
+        var s6=s5.split("-");
+        console.log(s6);
+                                //把 i-like-you 变成iLikeYou
+        var s7="i-like-you " ;
+        var s8=s7.split("-") ;  /*字符串分割成数组*/
+        
+        console.log(s8) ;
+        var s9="";
+        for(var i=1;i<s8.length;i++)  
+         {  
+               
+           s9=s9+s8[i].charAt(0).toUpperCase()+s8[i].substr(1);    
+             console.log(s9);                 
+             
+         }                             
+        var s10="i"+s9;
+        console.log(s10);  
+	</script>
+</body>
+</html>
