@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">fuck the word </div>
+	<ul id="list1">
+		<li>前端开发</li>
+		<li>学习</li>
+		<li>服务器</li>
+		<li>醉生梦死</li>
+	</ul>
+	<ul id="list2">
+		<li>前端开发</li>
+		<li>前端开发</li>
+		<li>前端开发</li>
+		<li>前端开发</li>
+		<li>前端开发</li>
+	</ul>
+	<script type="text/javascript">
+     var box=document.getElementById("box");
+     box.style.color="red";
+     box.style.fontSize="40px";
+     console.log(box);
+  var list3=document.getElementsByTagName("li");//获取页面所以的li
+   console.log(list3.length);
+     var list4=document.getElementById("list1").getElementsByTagName("li");
+      console.log(list4);
+      for(var i=0,len=list4.length;i<list4.length;i++)
+      {
+          if(i==0)
+          {list4[i].style.color='pink';}
+          else if(i==1)
+          {
+              list4[i].style.color="red";
+          }
+           else if(i==2)
+          {
+          	list4[i].style.color="blue";
+          }
+           else 
+          {
+          	list4[i].style.color="yellow";
+          }
+      }
+       console.log(list4.length);
+	</script>
+</body>
+</html>
