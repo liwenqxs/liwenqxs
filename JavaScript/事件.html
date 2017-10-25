@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件</title>
+	<style type="text/css">
+    .btn{width: 100px;height:40px;font-size: 140x;line-height: 40px;background-color: blue;text-align: center;border-radius: 6px;}
+    .btn1{width: 100px;height:40px;font-size: 140x;line-height: 40px;background-color:yellow;text-align: center;border-radius: 6px;}
+     .btn3{width: 100px;height:40px;font-size: 140x;line-height: 40px;background-color:blue;text-align: center;border-radius: 6px;}
+
+	</style>
+</head>
+<body>
+	<input type="button" value="弹出" onclick="alert('我是按钮')">
+	<div id="btn" class="btn" onmouseover="mouseoverFn(this)"
+	onmouseout="mouseoutFn(this)">开始</div>
+	<div id="btn1" class="btn1" >锁定</div>
+  
+	<script type="text/javascript">
+      function mouseoverFn(btn)   //鼠标滑过时变红    
+      {
+        btn.style.backgroundColor="red";
+      }
+       function mouseoutFn(btn)   //鼠标离开时变原来的蓝色    
+      {
+        btn.style.backgroundColor="blue";
+      }
+      var btn1=document.getElementById("btn1")  //返回id为DOM的对象
+      btn1.onclick=function()  
+      {
+      if(btn1.className=="btn1")   //如果是锁定点击后为解锁
+       {btn1.className="btn3";    
+       btn1.innerHTML="解锁";}
+       else                     //如果是解锁点击后为锁定
+        {btn1.className="btn1";
+        btn1.innerHTML="锁定";}
+      }
+
+
+	</script>
+</body>
+</html>
